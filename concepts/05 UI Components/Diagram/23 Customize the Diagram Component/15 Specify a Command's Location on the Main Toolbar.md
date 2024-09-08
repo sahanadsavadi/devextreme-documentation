@@ -1,4 +1,4 @@
-Use the [location](/api-reference/10%20UI%20Components/dxDiagram/7%20Interfaces/dxDiagramCustomCommand/location.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/#location') property to set the location of a command or separator on the main toolbar. This property accepts one of the following values:
+Use the [location](/api-reference/10%20UI%20Components/dxDiagram/7%20Interfaces/CustomCommand/location.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/#location') property to set the location of a command or separator on the main toolbar. This property accepts one of the following values:
 
 - **center**  
  Places the command in the center of the main toolbar.
@@ -235,7 +235,7 @@ The example below demonstrates how to customize the main toolbar:
             }
         }
         componentDidMount() {
-            var diagram = this.diagramRef.current.instance;
+            var diagram = this.diagramRef.current.instance();
             fetch('data/diagram-flow.json')
                 .then(function(response) {
                     return response.json();
